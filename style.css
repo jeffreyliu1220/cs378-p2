@@ -1,0 +1,25 @@
+body {
+    padding-top: 10px;
+  }
+
+.outer-row{
+    height:20%
+}
+
+.btn{
+  background-color: lightskyblue;
+  outline-color:black;
+  color:black;
+}
+
+.btn{
+  background-color: lightskyblue;
+  outline-color:black;
+  color:black;
+}
+
+.btn:active {
+  background-color: lightskyblue;
+  outline-color:black;
+  color:black;
+}

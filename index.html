@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap switched to bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <!-- Implement from below -->
+  <body>
+    <header style="text-align: center;">
+        <!-- you can add the logo image here -->
+    </header>
+    <div class="container vh-100">
+
+      <!-- top row with pikachu -->
+      <div class="row h-20 d-flex justify-content-center">
+        
+        <div class="col d-flex justify-content-center">
+          <img src="data:image/png;base64,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" class="img-fluid" alt="Pokeball next to logo spelling Pokemon Center">
+        </div>
+
+      </div>
+       
+      <div class="row h-20 align-items-center">
+        <div class="col d-flex  flex-column  align-items-center">
+          <p class="fs-4 " style="color:red; text-align:center;">Pokemon to Hug and Not to Eat</p>
+          <p class="fs-4 " style="font-style: italic; ">I like Pokemon</p>
+        </div>
+      </div>
+      
+      <!-- First price row -->
+      <div class="row h-20">
+        <!--Nested row-->
+        <div class="col p-3">
+        <div class="row h-100 w-100">
+         <!-- left side of row -->
+        <div class="col-3 h-100">
+            <img src="https://img.pokemondb.net/artwork/large/pikachu.jpg" alt = "Pikachu, the electric type pokemon from generation 1" class="img-thumbnail img-fluid h-100 ">
+        </div>
+        <!-- right side of row -->
+        <div class="col-9">
+          <div class="row h-50">
+            <div class="col-10">Pikachu</div>
+            <div class="col-2">$10</div>
+          </div>
+          <div class="row h-50">
+            <div class="col-12 h-100"> 
+              <button type="button" style="background-color: skyblue;" class="btn btn-outline-primary rounded-pill">Order</button>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- second row -->
+      <div class="row h-auto">
+        <!--Nested row-->
+        <div class="col p-3">
+        <div class="row h-100 w-100">
+         <!-- left side of row -->
+        <div class="col-3 h-100">
+            <img src="https://img.pokemondb.net/artwork/large/torkoal.jpg" alt = "Torkoal, the fire type pokemon from generation 3" class="img-thumbnail img-fluid h-100 ">
+        </div>
+        <!-- right side of row -->
+        <div class="col-9">
+          <div class="row h-50">
+            <div class="col-10">Torkoal</div>
+            <div class="col-2">$20</div>
+          </div>
+          <div class="row h-50">
+            <div class="col-12 h-100"> 
+              <button type="button" style="background-color: skyblue;" class="btn btn-outline-primary rounded-pill button-color">Order</button>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+
+            <!-- Third price row -->
+      <div class="row h-auto">
+        <!--Nested row-->
+        <div class="col p-3">
+        <div class="row h-100 w-100">
+         <!-- left side of row -->
+        <div class="col-3 h-100">
+            <img src="https://archives.bulbagarden.net/media/upload/b/b8/0977Dondozo.png" alt = "Dondozo, the water type pokemon from generation 9" class="img-thumbnail img-fluid h-100">
+        </div>
+        <!-- right side of row -->
+        <div class="col-9">
+          <div class="row h-50">
+            <div class="col-10">Dondozo</div>
+            <div class="col-2">$25</div>
+          </div>
+          <div class="row h-50">
+            <div class="col-12 h-100"> 
+              <button type="button" style="background-color: skyblue;" class="btn btn-outline-primary rounded-pill">Order</button>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+
+                  <!-- Fourth price row -->
+      <div class="row h-auto">
+        <!--Nested row-->
+        <div class="col p-3">
+        <div class="row h-100 w-100">
+         <!-- left side of row -->
+        <div class="col-3 h-100">
+            <img src="https://archives.bulbagarden.net/media/upload/3/34/0978Tatsugiri.png" alt = "Tatsugiri, the water and dragon type pokemon from generation 9" class="img-thumbnail img-fluid h-100">
+        </div>
+        <!-- right side of row -->
+        <div class="col-9"> 
+          <div class="row h-50">
+            <div class="col-10">Tatsugiri</div>
+            <div class="col-2">$25</div>
+          </div>
+          <div class="row h-50">
+            <div class="col-12 h-100"> 
+              <button type="button" style="background-color: skyblue;" class="btn btn-outline-primary rounded-pill">Order</button>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    
+    </div>
+  </body>
+</html>
