@@ -23,3 +23,59 @@ body {
   outline-color:black;
   color:black;
 }
+
+.menu-container{
+  width: 100%;
+  font-size: 125%;
+}
+
+.container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .test-border{
+  border: 1px solid red;
+} */
+
+.order-buttons{
+  height: 50%;
+  align-self: end;
+  font-size: 125%;
+}
+
+/* .item-container{
+  height: 20%;
+  border: 1px solid green;
+} */
+
+.checkout-text{
+  margin-left: 5%;
+}
+
+.checkout-button{
+  width: 40%;
+  font-size: 100%;
+  margin-left: 5%;
+}
+.amount-container{
+  display:flex;
+  align-items: center;
+}
+
+.amount-add{
+
+}
+
+.amount-sub{
+
+}
+
+.amount-number{
+  
+}
+
+.pikachu-button{
+
+}

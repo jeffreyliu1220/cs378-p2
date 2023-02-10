@@ -8,6 +8,7 @@
     <!-- Bootstrap switched to bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <title>Pokemon Cafe</title>
   </head>
   <!-- Implement from below -->
   <body>
@@ -16,7 +17,6 @@
     </header>
     <div class="container vh-100">
 
-      <!-- top row with pikachu -->
       <div class="row h-20 d-flex justify-content-center">
         
         <div class="col d-flex justify-content-center">
@@ -25,113 +25,157 @@
 
       </div>
        
-      <div class="row h-20 align-items-center">
+      <div class="row h-20 align-items-center w-100">
         <div class="col d-flex  flex-column  align-items-center">
           <p class="fs-4 " style="color:red; text-align:center;">Pokemon to Hug and Not to Eat</p>
           <p class="fs-4 " style="font-style: italic; ">I like Pokemon</p>
         </div>
       </div>
-      
-      <!-- First price row -->
-      <div class="row h-20">
-        <!--Nested row-->
-        <div class="col p-3">
-        <div class="row h-100 w-100">
-         <!-- left side of row -->
-        <div class="col-3 h-100">
-            <img src="https://img.pokemondb.net/artwork/large/pikachu.jpg" alt = "Pikachu, the electric type pokemon from generation 1" class="img-thumbnail img-fluid h-100 ">
-        </div>
-        <!-- right side of row -->
-        <div class="col-9">
-          <div class="row h-50">
-            <div class="col-10">Pikachu</div>
-            <div class="col-2">$10</div>
-          </div>
-          <div class="row h-50">
-            <div class="col-12 h-100"> 
-              <button type="button" style="background-color: skyblue;" class="btn btn-outline-primary rounded-pill">Order</button>
-            </div>
-          </div>
-        </div>
-        </div>
-        </div>
-      </div>
-
-      <!-- second row -->
-      <div class="row h-auto">
-        <!--Nested row-->
-        <div class="col p-3">
-        <div class="row h-100 w-100">
-         <!-- left side of row -->
-        <div class="col-3 h-100">
-            <img src="https://img.pokemondb.net/artwork/large/torkoal.jpg" alt = "Torkoal, the fire type pokemon from generation 3" class="img-thumbnail img-fluid h-100 ">
-        </div>
-        <!-- right side of row -->
-        <div class="col-9">
-          <div class="row h-50">
-            <div class="col-10">Torkoal</div>
-            <div class="col-2">$20</div>
-          </div>
-          <div class="row h-50">
-            <div class="col-12 h-100"> 
-              <button type="button" style="background-color: skyblue;" class="btn btn-outline-primary rounded-pill button-color">Order</button>
-            </div>
-          </div>
-        </div>
-        </div>
-        </div>
-      </div>
-
-            <!-- Third price row -->
-      <div class="row h-auto">
-        <!--Nested row-->
-        <div class="col p-3">
-        <div class="row h-100 w-100">
-         <!-- left side of row -->
-        <div class="col-3 h-100">
-            <img src="https://archives.bulbagarden.net/media/upload/b/b8/0977Dondozo.png" alt = "Dondozo, the water type pokemon from generation 9" class="img-thumbnail img-fluid h-100">
-        </div>
-        <!-- right side of row -->
-        <div class="col-9">
-          <div class="row h-50">
-            <div class="col-10">Dondozo</div>
-            <div class="col-2">$25</div>
-          </div>
-          <div class="row h-50">
-            <div class="col-12 h-100"> 
-              <button type="button" style="background-color: skyblue;" class="btn btn-outline-primary rounded-pill">Order</button>
-            </div>
-          </div>
-        </div>
-        </div>
-        </div>
-      </div>
-
-                  <!-- Fourth price row -->
-      <div class="row h-auto">
-        <!--Nested row-->
-        <div class="col p-3">
-        <div class="row h-100 w-100">
-         <!-- left side of row -->
-        <div class="col-3 h-100">
-            <img src="https://archives.bulbagarden.net/media/upload/3/34/0978Tatsugiri.png" alt = "Tatsugiri, the water and dragon type pokemon from generation 9" class="img-thumbnail img-fluid h-100">
-        </div>
-        <!-- right side of row -->
-        <div class="col-9"> 
-          <div class="row h-50">
-            <div class="col-10">Tatsugiri</div>
-            <div class="col-2">$25</div>
-          </div>
-          <div class="row h-50">
-            <div class="col-12 h-100"> 
-              <button type="button" style="background-color: skyblue;" class="btn btn-outline-primary rounded-pill">Order</button>
-            </div>
-          </div>
-        </div>
-        </div>
-        </div>
-      </div>
     
+      <div class="menu-container test-border">
+
+        <!-- Pickachu -->
+        <div class="row test-border h-auto item-container">
+          <!--Nested row-->
+          <div class="col p-3">
+            <div class="row h-100 w-100 test-border">
+            <!-- left side of row -->
+              <div class="col-3 test-border">
+                  <img src="https://img.pokemondb.net/artwork/large/pikachu.jpg" alt = "Pikachu, the electric type pokemon from generation 1" class="img-fluid img-thumbnail">
+              </div>
+              <!-- right side of row -->
+              <div class="col-9">
+                <div class="row h-50">
+                  <div class="col-10">Pikachu</div>
+                  <div id="pikachu-cost" class="col-2">$10</div>
+                </div>
+                <div class="row h-50">
+                  <div class="order-buttons col-12 d-flex align-content-center justify-content-end test-border"> 
+                    <div class="amount-container test-border">
+                      <div><button id="pikachu-sub" type="button" style="background-color: skyblue;" class="btn btn-outline-primary rounded-circle amount-sub">-</button></div>
+                      <div id="pikachu-amount" class="amount-number">0</div>
+                      <div><button id="pikachu-add" type="button" style="background-color: skyblue;" class="btn btn-outline-primary rounded-circle amount-add">+</button></div>
+                    </div>   
+                </div>
+              </div>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Torkoal -->
+        <div class="row test-border h-auto item-container">
+          <!--Nested row-->
+          <div class="col p-3">
+            <div class="row h-100 w-100 test-border">
+            <!-- left side of row -->
+              <div class="col-3 test-border">
+                  <img src="https://img.pokemondb.net/artwork/large/torkoal.jpg" alt = "Torkoal, the fire type pokemon from generation 3" class="img-thumbnail img-fluid">
+              </div>
+              <!-- right side of row -->
+              <div class="col-9">
+                <div class="row h-50">
+                  <div class="col-10">Torkoal</div>
+                  <div id="torkoal-cost" class="col-2">$20</div>
+                </div>
+                <div class="row h-50">
+                  <div class="order-buttons col-12 d-flex align-content-center justify-content-end test-border"> 
+                    <div class="amount-container test-border">
+                      <div><button id="torkoal-sub" type="button" style="background-color: skyblue;" class="btn btn-outline-primary rounded-circle amount-sub">-</button></div>
+                      <div id="torkoal-amount" class="amount-number">0</div>
+                      <div><button id="torkoal-add" type="button" style="background-color: skyblue;" class="btn btn-outline-primary rounded-circle amount-add">+</button></div>
+                    </div>   
+                </div>
+              </div>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dondozo -->
+        <div class="row test-border h-auto item-container">
+          <!--Nested row-->
+          <div class="col p-3">
+            <div class="row h-100 w-100 test-border">
+            <!-- left side of row -->
+              <div class="col-3 test-border">
+                  <img src="https://archives.bulbagarden.net/media/upload/b/b8/0977Dondozo.png" alt = "Dondozo, the water type pokemon from generation 9" class="img-thumbnail img-fluid h-100">
+              </div>
+              <!-- right side of row -->
+              <div class="col-9">
+                <div class="row h-50">
+                  <div class="col-10">Dondozo</div>
+                  <div id="dondozo-cost" class="col-2">$15</div>
+                </div>
+                <div class="row h-50">
+                  <div class="order-buttons col-12 d-flex align-content-center justify-content-end test-border"> 
+                    <div class="amount-container test-border">
+                      <div><button id="dondozo-sub" type="button" style="background-color: skyblue;" class="btn btn-outline-primary rounded-circle amount-sub">-</button></div>
+                      <div id="dondozo-amount" class="amount-number">0</div>
+                      <div><button id="dondozo-add" type="button" style="background-color: skyblue;" class="btn btn-outline-primary rounded-circle amount-add">+</button></div>
+                    </div>   
+                </div>
+              </div>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tatsugiri -->
+        <div class="row test-border h-auto item-container">
+          <!--Nested row-->
+          <div class="col p-3">
+            <div class="row h-100 w-100 test-border">
+            <!-- left side of row -->
+              <div class="col-3 test-border">
+                  <img src="https://archives.bulbagarden.net/media/upload/3/34/0978Tatsugiri.png" alt = "Tatsugiri, the water and dragon type pokemon from generation 9" class="img-thumbnail img-fluid h-100">
+              </div>
+              <!-- right side of row -->
+              <div class="col-9">
+                <div class="row h-50">
+                  <div class="col-10">Tatsugiri</div>
+                  <div id="tatsugiri-cost" class="col-2">$15</div>
+                </div>
+                <div class="row h-50">
+                  <div class="order-buttons col-12 d-flex align-content-center justify-content-end test-border"> 
+                    <div class="amount-container test-border">
+                      <div><button id="tatsugiri-sub" type="button" style="background-color: skyblue;" class="btn btn-outline-primary rounded-circle amount-sub">-</button></div>
+                      <div id="tatsugiri-amount" class="amount-number">0</div>
+                      <div><button id="tatsugiri-add" type="button" style="background-color: skyblue;" class="btn btn-outline-primary rounded-circle amount-add">+</button></div>
+                    </div>   
+                </div>
+              </div>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="checkout-container">
+          <div class="row">
+            <div class="col-6 d-flex">
+              <p class="checkout-text">Subtotal</p>
+              <p id="subtotal-id" class="checkout-text">$0</p>
+            </div>
+            <div class="col-6 test-border">
+              <button id="order" type="button" style="background-color: skyblue;" class="btn btn-outline-primary rounded-pill checkout-button">Order</button>
+              <button id="clear-all" type="button" style="background-color: lightgrey;" class="btn btn-outline-primary rounded-pill checkout-button">Clear All</button>
+            </div>
+          
+          </div>
+        </div>
+        
+      </div>
+
+ 
+
     </div>
+
+
+
+    <script src="script.js"></script>
   </body>
 </html>
